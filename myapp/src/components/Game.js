@@ -37,6 +37,22 @@ export default function Game(){
                             <button onClick={restartGame}>Play Again</button>
                         </div>
                     )}
+                    <div className="game-header">
+                    <h2>Animal Name: {targetAnimal.name}</h2>
+                </div>
+                <div className="animal-grid">
+                    {animals.map((animal)=>(
+                        <div
+                            key={animal.id}
+                            className="animal-card"
+                            onClick={()=>handleAnimalClick(animal.id)}>
+                                <img
+                                src={require(`../img/${animal.img}`)}
+                                />
+                        </div>
+                    ))}
+                </div>
+            </div>
                 </div>
         </>
     )
