@@ -47,7 +47,7 @@ export default function Game(){
                             className="animal-card"
                             onClick={()=>handleAnimalClick(animal.id)}>
                                 <img
-                                src={require(`../img/${animal.img}`)}
+                                src={require(`./img/${animal.img}`)}
                                 />
                         </div>
                     ))}
