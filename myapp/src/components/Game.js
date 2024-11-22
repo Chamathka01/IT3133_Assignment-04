@@ -29,7 +29,6 @@ export default function Game(){
                         {result && (
                         <div className="result">
                             <h2>Result:{result}</h2>
-                            <h2>{result}</h2>
                             <button onClick={restartGame}>Play Again</button>
                         </div>
                     )}
