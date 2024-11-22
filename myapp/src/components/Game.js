@@ -28,7 +28,7 @@ export default function Game(){
                 <h1>Animal Matching Game</h1>
                         {result && (
                         <div className="result">
-                            <h2>Result:{Result}</h2>
+                            <h2>Result:{result}</h2>
                             <h2>{result}</h2>
                             <button onClick={restartGame}>Play Again</button>
                         </div>
@@ -43,7 +43,7 @@ export default function Game(){
                             className="animal-card"
                             onClick={()=>handleAnimalClick(index)}>
                                 <img
-                                src={require(`.assets/img/${animal.img}`)}
+                                src={require(`../assets/img/${animal.img}`)}
                                 alt={animal.name}
                                 onError={(e) => (e.target.style.display = "none")}
                                 />
