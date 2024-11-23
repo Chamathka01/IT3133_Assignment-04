@@ -1,5 +1,5 @@
 import { useState } from "react";
-import animals from "../data/AnimalsDb";
+import {animals} from "../data/AnimalsDb";
 
 export default function Game(){
     const [targetAnimal, setTargetAnimal] = useState(getRandomAnimal());
